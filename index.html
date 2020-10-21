@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <title>Carbanio Task</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-11 col-11 mx-auto">
+          <div class="row mt-5 gx-3">
+
+            <!-- left-side div -->
+            <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-0">
+              <div class="card p-2">
+                <div class="row ml-1">
+                  <div class="col-md-2 col-11 mx-auto d-flex justify-content-center align-item-center border">
+                    <img src="carbanio.jpg" alt="product_list" class="w-100 h-100 product_list">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6 card-title">
+                        <h5>CLARITHROMYCIN IMPURITY J</h5>
+                        <p id="item_name">CAS No. 13127-18-9</p>
+                        <P id="item_name">Weight - 500 g</P>
+                        <p id="item_name">packs</p>
+                        <ul class="pagination">
+                          <li class="page-item"><button class="page-link" onclick="decrementBtn('textbox','red')"><i class="fa fa-minus"></i></button></li>
+                          <li class="page-item"><input type="text" name="" id="textbox" value="1"></li>
+                          <li class="page-item"><button class="page-link" onclick="incrementBtn('textbox','red')"><i class="fa fa-plus"></i></button></li>
+                          
+                          <li class="page-item"><button id="remove_btn">REMOVE</button></li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <span style="text-decoration: line-through; font-weight: bold; color: #615b5a;">530</span> 
+                    <span class="text-success font-weight-bold">( 2% off )</span>
+                    <span style="font-weight: bold; color: #615b5a;" id="price_per_item">₹500</span>
+                    <br>
+                    <br>
+                    <P id="item_name">GST APPLICABLE:  ₹100.49 (18%)</P>
+                    <p id="item_name" style="font-size: 15px;">FINAL PRICE:  <span id="red" style="font-size: 15px;" class="text-danger font-weight-bold"> 500 </span></p>
+                    <br>
+                    <p id="item_name">SHIPPING FEE: ₹100.00</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card p-2 mt-3">
+                <div class="row ml-1">
+                  <div class="col-md-2 col-11 mx-auto d-flex justify-content-center align-item-center border">
+                    <img src="carbanio.jpg" alt="product_list" class="w-100 h-100 product_list">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6 card-title">
+                        <h5>RAMIPRIL IMPURITY P</h5>
+                        <p id="item_name">CAS No. 13127-18-9</p>
+                        <P id="item_name">Weight - 500 g</P>
+                        <p id="item_name">packs</p>
+                        <ul class="pagination">
+                          <li class="page-item"><button class="page-link" onclick="decrementBtn('textbox1','red1')"><i class="fa fa-minus"></i></button></li>
+                          <li class="page-item"><input type="text" name="" id="textbox1" value="1"></li>
+                          <li class="page-item"><button class="page-link" onclick="incrementBtn('textbox1', 'red1')"><i class="fa fa-plus"></i></button></li>
+                          
+                          <li class="page-item"><button id="remove_btn">REMOVE</button></li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <span style="text-decoration: line-through; font-weight: bold; color: #615b5a;">730</span> 
+                    <span class="text-success font-weight-bold">( 8% off )</span>
+                    <span style="font-weight: bold; color: #615b5a;" id="price_per_item">₹500</span>
+                    <br>
+                    <br>
+                    <P id="item_name">GST APPLICABLE:  ₹100.49 (18%)</P>
+                    <p id="item_name" style="font-size: 15px;">FINAL PRICE:  <span id="red1" style="font-size: 15px;" class="text-danger font-weight-bold"> 500 </span></p>
+                    <br>
+                    <p id="item_name" style="text-decoration: line-through;">SHIPPING FEE: ₹100.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card p-2 mt-3">
+                <div class="row ml-1">
+                  <div class="col-md-2 col-11 mx-auto d-flex justify-content-center align-item-center border">
+                    <img src="carbanio.jpg" alt="product_list" class="w-100 h-100 product_list">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-6 card-title">
+                        <h5>EPOTHILONE B OR PATUPILONE</h5>
+                        <p id="item_name">CAS No. 13127-18-9</p>
+                        <P id="item_name">Weight - 500 g</P>
+                        <p id="item_name">packs</p>
+                        <ul class="pagination">
+                          <li class="page-item"><button class="page-link" onclick="decrementBtn('textbox2','red2')"><i class="fa fa-minus"></i></button></li>
+                          <li class="page-item"><input type="text" name="" id="textbox2" value="1"></li>
+                          <li class="page-item"><button class="page-link" onclick="incrementBtn('textbox2','red2')"><i class="fa fa-plus"></i></button></li>
+                          
+                          <li class="page-item"><button id="remove_btn">REMOVE</button></li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <span style="text-decoration: line-through; font-weight: bold; color: #615b5a;">610</span> 
+                    <span class="text-success font-weight-bold">( 4% off )</span>
+                    <span style="font-weight: bold; color: #615b5a;" id="price_per_item">₹500</span>
+                    <br>
+                    <br>
+                    <P id="item_name">GST APPLICABLE:  ₹100.49 (18%)</P>
+                    <p id="item_name" style="font-size: 15px;">FINAL PRICE:  <span id="red2" style="font-size: 15px;" class="text-danger font-weight-bold"> 500 </span></p>
+                    <br>
+                    <p id="item_name">SHIPPING FEE: ₹100.00</p>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+
+            <!-- right-side div -->
+            <div class="col-md-12 col-lg-4 col-11 mx-auto mt-md-5 mt-lg-0">
+              <div class="card">
+                <div class="right_side p-3 bg-white">
+                  <h2 class="text-center price_summary">PRICE SUMMARY</h2>
+                  <hr>
+                  <div class="price_indiv d-flex justify-content-between" class="pricesmry">
+                    <p>Sub Total:</p>
+                    <P id="product_total_ammount">1500</P>
+                  </div>
+                  <div class="price_indiv d-flex justify-content-between" class="pricesmry">
+                    <p>Service Charge:</p>
+                    <P id="service">100.00</P>
+                  </div>
+                  <div class="price_indiv d-flex justify-content-between" class="pricesmry">
+                    <p>Applicable Tax on SC</p>
+                    <P id="tax"> 100.00</P>
+                  </div>
+                  <div class="price_indiv d-flex justify-content-between" class="pricesmry">
+                    <p>Shipping Fee </p>
+                    <P id="shipingItem">200.00</P>
+                  </div>
+                  <hr style="border-top: 2px dotted black;">
+                  <div class="price_indiv d-flex justify-content-between">
+                    <p style="font-size: 25px; color: #706b6b;"> Total Payable </p>
+                    <P id="total_payable" style="font-size: 15px; color: #706b6b;">1900</P>
+                  </div>
+                  <hr style="border-top: 2px dotted black;">
+
+                  <div class="input-group mb-3">
+                    <input type="number" id="pincode" class="form-control" placeholder="Enter Delivery Pincode">
+                    
+                    <div class="input-group-append">
+                      <button style="background: #13138d; color: antiquewhite;" class="btn btn-outline-secondary" onclick="pincodeChecker()" type="button">Check</button>
+                    </div>
+                  </div>
+                  <span id="pin_msg"></span>
+                  <button type="button" class="btn btn-success btn-lg btn-block" id="btnValidate" data-toggle="modal" data-target="#staticBackdrop" disabled>PLACE ORDER</button>
+                </div>
+              </div>
+
+              <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">ADD YOUR SUPERVISOR'S NAME</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form onsubmit="return false">
+                        <div class="form-group mt-4">
+                          <input type="text" class="form-control" id="name" placeholder="Supervisor's Name">
+                        </div>
+                        <div class="form-group mt-4">
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Supervisor's email">
+                        </div>
+                        <div class="form-group mt-4">
+                          <input type="number" class="form-control" id="phoneNum" placeholder="Supervisor's Phone Number">
+                          <span id="phnNumMsg"></span>
+                        </div>
+                        <div class="form-group mt-4">
+                          
+                          <select class="form-select">
+                            <option>Select Payment Method </option>
+                            <option>Online</option>
+                            <option>Credit By Carbanio</option>
+                          </select>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" id="placeOrder" class="btn btn-success mt-4 btn-block" onclick="ValidatePlaceOrder()">PLACE YOUR ORDER NOW</button>
+                        </div>
+                      </form>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="main.js"></script>
+  </body>
+</html>
